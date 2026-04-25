@@ -248,10 +248,16 @@
 
 <script>
   window.addEventListener('load', function () {
-    if (location.hash) {
-      const el = document.querySelector(location.hash);
-      if (el) el.scrollIntoView();
+    var savedY = sessionStorage.getItem('workScrollY');
+    if (savedY !== null) {
+      window.scrollTo(0, parseInt(savedY));
+      sessionStorage.removeItem('workScrollY');
     }
+    document.querySelectorAll('a[href^="project-"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        sessionStorage.setItem('workScrollY', window.scrollY);
+      });
+    });
   });
 </script>
 </body>
