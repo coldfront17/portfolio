@@ -245,5 +245,14 @@
 
         </section>
     </main>
+
+<script>
+  window.addEventListener('load', function () {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) el.scrollIntoView();
+    }
+  });
+</script>
 </body>
 </html>
