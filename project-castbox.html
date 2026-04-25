@@ -5,50 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CastBox - VR Sculpting Tool | Kris Tong</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'media' }</script>
 </head>
-<body class="bg-white text-gray-800 font-sans antialiased">
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
 
-    <nav class="max-w-6xl mx-auto px-6 py-8 flex gap-8 text-lg font-medium text-gray-500 border-b border-gray-100 mb-8">
-        <a href="index.html" class="hover:text-gray-900 transition pb-1">Home</a>
-        <a href="work.html" class="text-gray-900 border-b-2 border-gray-900 pb-1">Work</a>
+    <nav class="max-w-6xl mx-auto px-6 py-8 flex gap-8 text-lg font-medium text-gray-500 dark:text-gray-400 border-b border-gray-100 dark:border-gray-800 mb-8">
+        <a href="index.html" class="hover:text-gray-900 dark:hover:text-white transition pb-1">Home</a>
+        <a href="work.html" class="text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white pb-1">Work</a>
     </nav>
 
     <main class="max-w-4xl mx-auto px-6 pb-20">
 
-        <a href="work.html" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 mb-8 transition">
+        <a href="work.html" class="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white mb-8 transition">
             <span class="mr-2">←</span> Back to List
         </a>
 
         <figure class="mb-10">
-            <img src="assets/project-castbox.jpg" alt="CastBox - VR Sculpting Tool" class="w-full aspect-[21/9] object-cover rounded-xl shadow-sm border border-gray-200" onerror="this.src='https://via.placeholder.com/1200x500?text=Hero+Image'">
+            <img src="assets/project-castbox.jpg" alt="CastBox - VR Sculpting Tool" class="w-full aspect-[21/9] object-cover rounded-xl shadow-sm border border-gray-200 dark:border-gray-700" onerror="this.src='https://via.placeholder.com/1200x500?text=Hero+Image'">
         </figure>
 
-        <header class="mb-12 border-b border-gray-100 pb-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">CastBox - VR Sculpting Tool</h1>
+        <header class="mb-12 border-b border-gray-100 dark:border-gray-800 pb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">CastBox - VR Sculpting Tool</h1>
 
             <div class="flex flex-wrap gap-y-4 gap-x-8 text-sm">
                 <div>
-                    <div class="text-gray-500 mb-1">Role / Type</div>
-                    <div class="font-medium text-gray-900">UX Designer / VR Creativity</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Role / Type</div>
+                    <div class="font-medium text-gray-900 dark:text-white">UX Designer / VR Creativity</div>
                 </div>
                 <div>
-                    <div class="text-gray-500 mb-1">Platform</div>
-                    <div class="font-medium text-gray-900">VR / 3D</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Platform</div>
+                    <div class="font-medium text-gray-900 dark:text-white">VR / 3D</div>
                 </div>
                 <div>
-                    <div class="text-gray-500 mb-1">Timeline</div>
-                    <div class="font-medium text-gray-900">2016 - 2017</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Timeline</div>
+                    <div class="font-medium text-gray-900 dark:text-white">2016 - 2017</div>
                 </div>
                 <div>
-                    <div class="text-gray-500 mb-1">Location</div>
-                    <div class="font-medium text-gray-900">China</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Location</div>
+                    <div class="font-medium text-gray-900 dark:text-white">China</div>
                 </div>
             </div>
         </header>
 
         <article class="prose prose-lg prose-gray max-w-none text-gray-700">
 
-            <p class="text-xl leading-relaxed text-gray-600 mb-8">
+            <p class="text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
                 Recognizing that existing 2D PC software like ZBrush presented a steep learning curve for beginners interested in 3D modeling, I joined a cross-functional team to design "CastBox," an immersive VR creativity tool.
             </p>
 
@@ -57,11 +58,11 @@
                 <img src="assets/Project-detial-materials/castbox/castbox-2.png" alt="CastBox VR sculpting tool" class="w-full rounded-xl shadow-md">
             </div>
 
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 Tasked with making digital sculpting intuitive, I explored spatial UI layouts and ultimately designed a "fan-out" tool palette that mimicked physical oil painting, keeping tools easily accessible on the user's virtual hands.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 Contributing to the full product lifecycle from ideation to deployment, I helped replace traditional 2D paradigms with immersive 3D interaction models, delivering a highly accessible VR experience that significantly lowered the barrier to entry for 3D content creation.
             </p>
 
@@ -71,7 +72,7 @@
                 <img src="assets/Project-detial-materials/castbox/castbox-6.png" alt="CastBox interface" class="w-full rounded-xl shadow-md">
             </div>
 
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 This early exploration of VR ignited my passion for spatial interaction, and I aim to continue developing creative tools that align with human intuition to empower everyone's imagination.
             </p>
 

@@ -5,58 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Immersive Wānanga | Kris Tong</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'media' }</script>
 </head>
-<body class="bg-white text-gray-800 font-sans antialiased">
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
 
-    <nav class="max-w-6xl mx-auto px-6 py-8 flex gap-8 text-lg font-medium text-gray-500 border-b border-gray-100 mb-8">
-        <a href="index.html" class="hover:text-gray-900 transition pb-1">Home</a>
-        <a href="work.html" class="text-gray-900 border-b-2 border-gray-900 pb-1">Work</a>
+    <nav class="max-w-6xl mx-auto px-6 py-8 flex gap-8 text-lg font-medium text-gray-500 dark:text-gray-400 border-b border-gray-100 dark:border-gray-800 mb-8">
+        <a href="index.html" class="hover:text-gray-900 dark:hover:text-white transition pb-1">Home</a>
+        <a href="work.html" class="text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white pb-1">Work</a>
     </nav>
 
     <main class="max-w-4xl mx-auto px-6 pb-20">
 
-        <a href="work.html" class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 mb-8 transition">
+        <a href="work.html" class="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white mb-8 transition">
             <span class="mr-2">←</span> Back to List
         </a>
 
         <figure class="mb-10">
-            <img src="assets/project-wananga.jpg" alt="Virtual Immersive Wānanga" class="w-full aspect-[21/9] object-cover rounded-xl shadow-sm border border-gray-200" onerror="this.src='https://via.placeholder.com/1200x500?text=Hero+Image'">
+            <img src="assets/project-wananga.jpg" alt="Virtual Immersive Wānanga" class="w-full aspect-[21/9] object-cover rounded-xl shadow-sm border border-gray-200 dark:border-gray-700" onerror="this.src='https://via.placeholder.com/1200x500?text=Hero+Image'">
         </figure>
 
-        <header class="mb-12 border-b border-gray-100 pb-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Virtual Immersive Wānanga</h1>
+        <header class="mb-12 border-b border-gray-100 dark:border-gray-800 pb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">Virtual Immersive Wānanga</h1>
 
             <div class="flex flex-wrap gap-y-4 gap-x-8 text-sm">
                 <div>
-                    <div class="text-gray-500 mb-1">Role / Type</div>
-                    <div class="font-medium text-gray-900">Designer & Researcher / Bicultural</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Role / Type</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Designer & Researcher / Bicultural</div>
                 </div>
                 <div>
-                    <div class="text-gray-500 mb-1">Platform</div>
-                    <div class="font-medium text-gray-900">VR / AR</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Platform</div>
+                    <div class="font-medium text-gray-900 dark:text-white">VR / AR</div>
                 </div>
                 <div>
-                    <div class="text-gray-500 mb-1">Timeline</div>
-                    <div class="font-medium text-gray-900">2022 - 2023</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Timeline</div>
+                    <div class="font-medium text-gray-900 dark:text-white">2022 - 2023</div>
                 </div>
                 <div>
-                    <div class="text-gray-500 mb-1">Location</div>
-                    <div class="font-medium text-gray-900">Aotearoa New Zealand</div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Location</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Aotearoa New Zealand</div>
                 </div>
             </div>
         </header>
 
         <article class="prose prose-lg prose-gray max-w-none text-gray-700">
 
-            <p class="text-xl leading-relaxed text-gray-600 mb-8">
+            <p class="text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
                 Recognizing that traditional educational spaces often lacked accessible digital alternatives that respected bicultural collaborative practices, I collaborated with Māori communities to design and develop a virtual learning and workshop space known as a Wānanga. The challenge was to create a digital environment that was both technically advanced and culturally safe, honoring indigenous protocols.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 I applied rigorous co-design methodologies to ensure the virtual environment authentically reflected Māori values and Tikanga, prototyping the space using VR/AR tools with a focus on inclusive design and active learning.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 I successfully delivered a functional prototype of a virtual Wānanga that provided a culturally safe, immersive space for cross-cultural collaboration. This initiative represents a significant step in my commitment to inclusive and bicultural design, and I look forward to exploring how social VR can further simulate the ritualistic sense of physical collaborative spaces.
             </p>
 
