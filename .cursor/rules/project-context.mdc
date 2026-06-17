@@ -1,0 +1,116 @@
+---
+description: Project context, architecture, conventions, and known issues for the Kris Tong portfolio site. Read this before making changes.
+globs:
+alwaysApply: true
+---
+
+# Kris Tong Portfolio — Working Context
+
+A static personal portfolio / case-study website for **Kris (Lingwei) Tong**, a
+Digital Experience Designer & UX Researcher. Deployed as a GitHub Pages site
+(`kristong.github.io`). There is **no build step, framework, or package manager** —
+just hand-authored HTML with Tailwind loaded from a CDN, plus a couple of small
+vanilla-JS enhancements.
+
+## Tech stack
+
+- **HTML** (one file per page, no templating/includes).
+- **Tailwind CSS** via CDN: `<script src="https://cdn.tailwindcss.com"></script>`.
+- **Dark mode** is enabled per page with `tailwind.config = { darkMode: 'media' }`
+  (follows the OS `prefers-color-scheme`; there is no manual toggle).
+- **Vanilla JS only** — no bundler, no dependencies. Two reusable behaviors:
+  - `assets/lightbox.js` — click-to-zoom lightbox; auto-attaches to every
+    `<img>` inside an `<article>` on project detail pages.
+  - Inline scripts for the sticky-sidebar "spring" animation and scroll
+    restoration (see below).
+
+## Page map
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Home / about page: bio, skills grid, work experience. |
+| `work.html` | "Selected Projects" list; each card links to a detail page. |
+| `project-*.html` | One detail page per project (case study). |
+| `assets/` | Images, project media, and `lightbox.js`. |
+| `README.md` | One-line description only. |
+
+### Projects (8 detail pages)
+
+`tourism`, `tourmaster`, `sia`, `mataliki`, `wananga`, `cvr`, `c4`, `napos`.
+Each has a `project-<slug>.html` page, a card thumbnail at
+`assets/project-<slug>.jpg`, and (most have) a media folder at
+`assets/Project-detial-materials/<slug>/`.
+
+## Shared layout conventions (keep these consistent across pages)
+
+- **Body classes:**
+  `bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased`.
+- **Sticky top nav:** identical markup on every page — a `sticky top-0 z-50`
+  wrapper containing a `max-w-6xl` nav with `Home` (`index.html`) and `Work`
+  (`work.html`) links. The active link gets
+  `text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white pb-1`.
+- **Sidebar / two-column layout** (`index.html`, `work.html`):
+  `max-w-6xl` main with a `md:w-1/4` `<aside>` (avatar + contact links) and a
+  `md:w-3/4` content `<section>`. The aside uses `md:sticky md:top-28` and
+  `id="sidebar-spring"`.
+- **Detail pages** (`project-*.html`): narrower `max-w-4xl` main, a "← Back to
+  List" link to `work.html`, a `21/9` hero `<figure>`, a metadata `<header>`
+  (Role/Type, Platform, Timeline, plus Funding/Location/etc.), and an
+  `<article class="prose ...">` body that mixes paragraphs with image grids
+  (`grid-cols-2`/`grid-cols-3`). Detail pages load `assets/lightbox.js` at the
+  end of `<body>`.
+- **Images** use `onerror` fallbacks to `via.placeholder.com` so missing assets
+  degrade gracefully.
+- **"See Details"** buttons are pill-shaped dark/white buttons; optional
+  external "Learn more ↗" links sit beside them.
+
+### Scroll-restoration behavior (work.html ⇄ detail pages)
+
+`work.html` saves `window.scrollY` to `sessionStorage` (`workScrollY`) when a
+`project-*` link is clicked, hides the page (`opacity:0`) on return, restores the
+saved position on `load`, then fades back in. Preserve this when editing
+`work.html` navigation so returning from a detail page does not jump.
+
+### Sidebar "spring" animation
+
+An inline IIFE on `index.html` / `work.html` nudges `#sidebar-spring` slightly on
+scroll then springs it back with a cubic-bezier transition. It is purely
+decorative.
+
+## Conventions for adding/editing content
+
+- To **add a project**: create `project-<slug>.html` from an existing detail page
+  as a template, add a card to `work.html`, add `assets/project-<slug>.jpg`, and
+  (optionally) a media folder. Keep the nav, body classes, and dark-mode config
+  identical to existing pages.
+- Match the existing Tailwind utility patterns rather than introducing custom CSS.
+- Keep all `dark:` variants in sync whenever you touch colored elements.
+- Content tone is first-person, outcome-oriented case-study writing.
+
+## Known issues / cleanup opportunities (verify before "fixing" — may be intentional)
+
+- **Naming inconsistency for the Matariki project.** The file/asset slug is
+  `mataliki` and the `work.html` card title reads **"Mataliki Hana Nui"**, but
+  the detail page (`project-mataliki.html`) title is **"Matariki Hunga Nui"**.
+  "Matariki Hunga Nui" appears to be the correct te reo Māori spelling.
+- **Misspelled asset folder**: `assets/Project-detial-materials/`
+  ("detial" → "detail"). Renaming would require updating every `src` reference
+  across the `project-*.html` pages.
+- **Stray temp file**: `assets/Project-detial-materials/~$oject Detailed Pages.docx`
+  is a leftover Microsoft Office lock/temp file and can be removed.
+- **Source `.docx`** `assets/Project-detial-materials/Project Detailed Pages.docx`
+  holds the source copy for the detail pages.
+- **Placeholder GitHub link** in `index.html` sidebar (`href="#"`).
+- Repeated inline `<script>` blocks (sidebar spring) are duplicated across pages
+  rather than shared from `assets/`; could be extracted like `lightbox.js`.
+
+## Testing / preview
+
+No automated tests or CI. To preview locally, serve the folder statically, e.g.:
+
+```bash
+python3 -m http.server 8000
+```
+
+then open `http://localhost:8000/index.html`. Tailwind and the placeholder image
+fallbacks require network access.
