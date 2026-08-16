@@ -23,19 +23,23 @@
             <div class="flex flex-wrap gap-y-4 gap-x-8 text-sm">
                 <div>
                     <div class="text-gray-500 dark:text-gray-400 mb-1">Role / Type</div>
-                    <div class="font-medium text-gray-900 dark:text-white">Postdoctoral Researcher / UX</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Postdoctoral Researcher — Design &amp; Study Lead / Funded Research</div>
                 </div>
                 <div>
                     <div class="text-gray-500 dark:text-gray-400 mb-1">Platform</div>
-                    <div class="font-medium text-gray-900 dark:text-white">Mobile AR</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Mobile AR — iOS, Unity + ARKit + Niantic Lightship VPS</div>
                 </div>
                 <div>
                     <div class="text-gray-500 dark:text-gray-400 mb-1">Timeline</div>
-                    <div class="font-medium text-gray-900 dark:text-white">2025 - Present</div>
+                    <div class="font-medium text-gray-900 dark:text-white">2025 – Present</div>
+                </div>
+                <div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Programme</div>
+                    <div class="font-medium text-gray-900 dark:text-white">NZD $8.2M, MBIE-funded, 5-year multi-university</div>
                 </div>
                 <div>
                     <div class="text-gray-500 dark:text-gray-400 mb-1">Location</div>
-                    <div class="font-medium text-gray-900 dark:text-white">Aotearoa New Zealand</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Banks Peninsula / Ōtautahi Christchurch, Aotearoa New Zealand</div>
                 </div>
             </div>
         </header>
@@ -43,15 +47,200 @@
         <article class="prose prose-lg prose-gray max-w-none text-gray-700">
 
             <p class="text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
-                With the tourism industry in Aotearoa New Zealand requiring a transformative approach to foster culturally grounded experiences, I joined an NZD $8.2M MBIE-funded multi-university project as a Postdoctoral Researcher. My objective was to develop on-site AR experiences that enhance tourists' place attachment and collective memory.
+                With the tourism industry in Aotearoa New Zealand requiring a transformative approach to foster culturally grounded experiences, I joined an NZD $8.2M MBIE-funded multi-university project as a Postdoctoral Researcher. My objective was to develop on-site AR experiences that enhance tourists' place attachment and collective memory. This page is about what that objective produced — CamStories, a mobile AR application I designed, built, and evaluated, which turns the ordinary act of taking a holiday photo into a shared, story-driven performance.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">The Programme, and My Remit</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                To achieve this, I explored various mobile AR and interactive storytelling tools, ensuring all technical implementations remained in strict alignment with Māori values such as kaitiakitanga (guardianship). By leading the UX evaluation and co-design methodologies, I ensured that these digital solutions were both engaging for users and culturally relevant. I am contributing to this five-year national research programme, bridging cultural preservation with advanced spatial computing to deliver accessible digital heritage experiences.
             </p>
 
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                To achieve this, I explored various mobile AR and interactive storytelling tools, ensuring all technical implementations remained in strict alignment with Māori values such as kaitiakitanga (guardianship). By leading the UX evaluation and co-design methodologies, I ensured that these digital solutions were both engaging for users and culturally relevant.
+                My position sits at the point where the programme's research questions have to become something a visitor can actually hold in their hands. That means I own the full arc: identifying where the existing technology falls short, designing a response, building it to a standard where strangers can use it unsupervised outdoors, running the study that tests it, and reporting honestly on what the study shows.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">The Gap I Set Out to Close</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                AR in tourism has a recurring flaw, and it is a behavioural one rather than a technical one. Most applications require the visitor to <em>stop</em> being a tourist in order to receive content: pause the conversation, stop taking photos, hold the phone still, and passively consume a narration. The social activity and the story compete for the same person at the same moment, and the story usually wins by interrupting.
             </p>
 
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                Currently, I am contributing to this five-year national research program, effectively reshaping tourism by bridging cultural preservation with advanced spatial computing to deliver accessible digital heritage experiences. This role has deepened my understanding of how technology can serve as a bridge for cultural heritage, and I look forward to further refining these frameworks to create even more meaningful connections between people and the land.
+                Photography is where this is most obvious. Travel photography is not documentation — it is a social ritual. For a pair or a group it involves negotiation, direction, performance, and shared creativity; it is one of the moments where a trip becomes a shared memory rather than a set of individual ones. Existing AR photography research has largely treated that ritual as a problem to be solved: compositional guidance for a better-framed shot, overlays to help a stranger take your photo, historical models for then-and-now comparison. Useful work, but all of it aimed at the photographic <em>outcome</em>.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                That left the question I wanted to work on: what if the photo-taking act itself were the narrative medium? My research question was therefore: <strong class="font-semibold text-gray-900 dark:text-white">how can a mobile AR experience transform the routine act of travel photography into a meaningful, narrative-driven, and socially engaging interaction?</strong> Two sub-questions guided the design — how integrating time-based narrative affects communication and collaboration between visitors, and how it affects their engagement with the destination, their memory of it, and their emotional connection to the place.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">Designing the Camera as the Story</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The design rests on three decisions.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">Time-alternation as narrative reskinning.</strong> Rather than annotating the landscape with facts about it, I used the landscape as a canvas for a curated story of its own deep time. Drawing on Azuma's concept of reskinning and Liestøl's work on situated simulations, the past and the future are presented not as overlays floating in front of the world but as complete, full-screen 3D environments that replace it. This produces a deliberate cognitive oscillation: the visitor compares the virtual <em>then</em> on the screen against the physical <em>now</em> around their body, and the gap between the two is where sense-making happens.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">The camera gesture is the navigation.</strong> There is no menu for time travel. Panning the phone left moves into the deep past; panning right moves into a speculative future. The gesture a photographer already performs to frame a shot is the same gesture that moves through the story, so exploration and photography are not two activities that interrupt each other — they are one activity.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">Asymmetric information, on purpose.</strong> Only one person holds the phone. I split the pair into a Photographer, who sees the AR scene and directs, and a Traveler, who is inside the scene but cannot see it and must act on their partner's spoken description. This is the most consequential decision in the project: the information gap is not a limitation I worked around, it is the mechanism that forces the two people to talk to each other. The photograph becomes a record of a negotiation rather than a record of a view.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">Building CamStories</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                I built the prototype in Unity (2022.3.50f1) on iOS, using ARKit together with Niantic's Lightship VPS so that the experience anchors to a scanned physical point of interest rather than a printed marker — the visitor arrives, raises the phone, and the world aligns itself with no setup step. It was deployed on an iPhone 14 Pro, using the device's LiDAR sensor for reliable tracking outdoors.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Two details mattered more than their size suggests. ARKit's person segmentation occludes the virtual environment with the real person, so the Traveler reads as genuinely standing inside the past rather than pasted on top of it. And because a still frame cannot hold what is actually happening in these moments — the laughing, the pointing, the mid-instruction pose — the shutter captures a still image <em>and</em> a three-second video clip, in the manner of a Live Photo. The artefact the pair takes home is a record of the performance, not just its best frame.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">The Experience, Step by Step</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The pair arrives at the site and the Photographer opens the app. The phone recognises the physical landmark, and the present-day view appears through the camera with a virtual information board and some planting added — a small signal that this place has more to say than it is currently saying.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The Photographer begins framing a shot, and in doing so pans left. The present dissolves and they are standing inside the Banks Peninsula volcanoes millions of years ago, mid-eruption, at the moment the landform they are standing on was made. Pan right instead, and they are in a speculative future where the volcano has eroded further and the sea has come back over it. The Traveler, standing in the middle of all this, can see none of it. They hear their partner react, and then they hear an instruction: <em>stand there, look up, act like something enormous is behind you.</em>
+            </p>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/tourism/camstories-scenes.jpg" alt="The three time periods in CamStories: (a) the past, an erupting volcano; (b) the speculative future, an eroded landscape returned to the sea; (c) the present, with a virtual information board for audio narration" class="w-full rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    The three eras as the Photographer sees them on screen. (a) The past — the volcano mid-eruption. (b) The speculative future — eroded, with the sea returned. (c) The present — the default view on launch. Each era carries a virtual board that triggers the audio narration for that period; two are ringed in green here for legibility, and the rings are not visible in the app.
+                </figcaption>
+            </figure>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                In each of the three eras, virtual boards can be tapped to trigger a voice-over telling the story of that period, so the Photographer becomes the one who holds the narrative and has to relay it. Then the shutter. What comes back is a still and a three-second clip of a person posing inside a volcano, or standing on the surface of a future sea, on the instruction of someone who could see it when they could not.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                That is the whole loop, and it is deliberately short: explore, describe, direct, capture — then do it again in another era.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">Putting It in Front of Users</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                I ran an exploratory within-subjects pilot study with five pairs of participants (N=10; four female, six male; aged 20–35, mostly with limited prior AR-in-tourism experience). The story CamStories tells is that of the Banks Peninsula volcanoes, whose eroded remains form the harbours and hills around Ōtautahi Christchurch. For the study itself I used the model volcano in the Earth Science Garden on the University of Canterbury campus — a geology teaching model, built to represent exactly that formation, repurposed here as a stand-in destination. It let me test the full outdoor experience, VPS anchoring and all, against a real physical landmark under repeatable conditions and within walking distance of the lab.
+            </p>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/tourism/camstories-site.jpg" alt="The model volcano in the Earth Science Garden on the University of Canterbury campus, used as the study site" class="w-full rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    The study site: a geology teaching model of the Banks Peninsula volcanoes, sitting in the Earth Science Garden in the middle of campus, repurposed as a simulated travel destination.
+                </figcaption>
+            </figure>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Each pair experienced two conditions. The Control Condition reproduced the conventional pattern the field currently uses: watch an introductory video together first, then take photos afterwards — narrative and photography separated. The Experimental Condition was the full CamStories loop, with the two fused. Condition order was counterbalanced to mitigate order effects, and the pairs swapped Photographer and Traveler roles between conditions so every participant experienced both sides of the information asymmetry.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                I collected two kinds of data: the photographs and clips the participants actually produced, and joint semi-structured interviews conducted afterwards in a quiet indoor setting, covering their impressions, what they remembered of the narrative, how they collaborated, and why they took the specific photos they took. Interviews were analysed thematically; the photographic artefacts were compared across conditions for creativity, narrative content, and collaborative expression. Using the participants' own photographs as data — not just their reported opinions — gave me a behavioural measure to set against what people said.
+            </p>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/tourism/camstories-study.jpg" alt="Behind-the-scenes photographs of a participant pair using CamStories at the study site" class="w-full rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    A participant pair working through the experience: (a) the Traveler posing on the model while the Photographer frames the shot, (b) checking an AR scene together, (c) directing a close-up of a volcanic feature, (d) coordinating a shot from a distance. Participant faces are obscured.
+                </figcaption>
+            </figure>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-10">
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">5 pairs</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">N=10, within-subjects, counterbalanced</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">2 conditions</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Segmented vs. integrated narrative</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">90 photos</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Captured as behavioural data</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">2.1&times;</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">More photos taken in the AR condition</div>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto my-8">
+                <table class="w-full text-sm text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-200 dark:border-gray-700">
+                            <th class="py-3 pr-4 font-semibold text-gray-900 dark:text-white">Pair</th>
+                            <th class="py-3 pr-4 font-semibold text-gray-900 dark:text-white">Control Condition</th>
+                            <th class="py-3 pr-4 font-semibold text-gray-900 dark:text-white">Experimental Condition</th>
+                            <th class="py-3 font-semibold text-gray-900 dark:text-white">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600 dark:text-gray-400">
+                        <tr class="border-b border-gray-100 dark:border-gray-800">
+                            <td class="py-2 pr-4">P1 &amp; P2</td><td class="py-2 pr-4">7</td><td class="py-2 pr-4">17</td><td class="py-2">24</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 dark:border-gray-800">
+                            <td class="py-2 pr-4">P3 &amp; P4</td><td class="py-2 pr-4">6</td><td class="py-2 pr-4">15</td><td class="py-2">21</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 dark:border-gray-800">
+                            <td class="py-2 pr-4">P5 &amp; P6</td><td class="py-2 pr-4">5</td><td class="py-2 pr-4">8</td><td class="py-2">13</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 dark:border-gray-800">
+                            <td class="py-2 pr-4">P7 &amp; P8</td><td class="py-2 pr-4">6</td><td class="py-2 pr-4">9</td><td class="py-2">15</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 dark:border-gray-800">
+                            <td class="py-2 pr-4">P9 &amp; P10</td><td class="py-2 pr-4">5</td><td class="py-2 pr-4">12</td><td class="py-2">17</td>
+                        </tr>
+                        <tr class="font-semibold text-gray-900 dark:text-white">
+                            <td class="py-3 pr-4">Total</td><td class="py-3 pr-4">29</td><td class="py-3 pr-4">61</td><td class="py-3">90</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-sm text-gray-500 dark:text-gray-400 mt-3">Photographs captured per pair, per condition.</div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">What We Found — and the Tension I Did Not Design For</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">Engagement rose, and the photographs prove it.</strong> Every pair found the integrated condition more engaging than the control. The control was described in flatly passive terms — one participant compared the introductory video to a "dry lecture," another to a standard interpretive panel — and photography under it was purely documentary, an "I was there" record of a physical model. Under CamStories, participants described the experience as playful, game-like, and fun, and their behaviour matched: 61 photographs against 29, with the motivation shifting from documenting a place to creatively capturing a companion's performance inside it. As one participant put it, the real environment alone would have earned one or two snapshots at most; the AR eras were what made photographs worth taking.
+            </p>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/tourism/camstories-photos.jpg" alt="Comparison of participant photographs: documentary-style shots from the control condition on the left, playful AR-integrated compositions from the experimental condition on the right" class="w-full rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    The behavioural difference, visible in the artefacts. Left column, Control Condition: documentary "I was there" framing of the physical model. Right column, Experimental Condition: the Photographer directing their partner into the scene — standing on a future sea, or on the flank of an erupting volcano. Participant faces are obscured.
+                </figcaption>
+            </figure>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">Asymmetry worked, and it was the most polarising thing I built.</strong> Forcing one person to describe what the other could not see was hard — one participant found giving directions without a shared visual reference genuinely difficult. But most framed it positively and unprompted as a "team activity" and a "bonding" experience, and it was this back-and-forth that made the session memorable rather than the AR content on its own. The Traveler turned out not to be a subject at all but an active co-creator, whose interpretation of spoken cues shaped the final artefact. Passers-by stopped to watch, which suggests the experience also works outward as a conversation starter between strangers.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">And the story lost.</strong> This is the finding I did not expect and the one I consider most valuable. Several Photographers admitted that once they were absorbed in framing shots, they ignored the audio narration entirely or were too distracted to retain it. Visual information — lava, sea-level rise — was consistently remembered; the voice-over was not. The exception is instructive: the one participant who recalled the narration clearly did so because she needed its content in order to direct her partner. The audio was remembered precisely where it had a job to do.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                So the honest answer to my research question is split. The "socially engaging" half succeeded, decisively. The "narrative-driven" half did not: the play I designed to carry the story ended up crowding it out. Participants also asked for more control than my elegant, discovery-based panning gesture gave them — some found it intuitive, others found it arbitrary and unsignposted, and several wanted subtitles, shorter story segments, and the ability to switch the AR off to take an ordinary photo.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">Where It Goes Next</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The tension between playful engagement and narrative absorption is the contribution here, and it generalises beyond this prototype: in social, creative AR contexts, a story cannot survive as a passive audio layer sitting alongside the interaction. It has to be functionally load-bearing — something the participants need in order to do the thing they are enjoying. That is the principle the next iteration is built on, alongside more transparent user control and opt-in levels of guidance.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The wider value for the programme is a shift in what an AR tourism artefact is for. The photographs from this study are not attempts at technical perfection; they are records of a collaboration, souvenirs carrying the memory of the interaction that produced them. Designing for that — for the process rather than the output — is where I think shared AR in tourism has the most room to move, and it is what I am carrying into the next phase of the five-year programme.
             </p>
 
         </article>
