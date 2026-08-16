@@ -7,10 +7,10 @@ alwaysApply: true
 # Kris Tong Portfolio — Working Context
 
 A static personal portfolio / case-study website for **Kris (Lingwei) Tong**, a
-Digital Experience Designer & UX Researcher. Deployed as a GitHub Pages site
-(`kristong.github.io`). There is **no build step, framework, or package manager** —
-just hand-authored HTML with Tailwind loaded from a CDN, plus a couple of small
-vanilla-JS enhancements.
+Digital Experience Designer & UX Researcher. Deployed as a GitHub Pages site at
+`https://coldfront17.github.io/portfolio/`. There is **no build step, framework,
+or package manager** — just hand-authored HTML with Tailwind loaded from a CDN,
+plus a couple of small vanilla-JS enhancements.
 
 ## Tech stack
 
