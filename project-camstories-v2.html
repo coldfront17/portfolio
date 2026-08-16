@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamStories V2 | Kris Tong</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'media' }</script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
+
+    <script src="assets/project-chrome.js" data-project-name="CamStories V2"></script>
+
+    <main class="max-w-4xl mx-auto px-6 pb-20">
+
+        <figure class="mb-10">
+            <img src="assets/Project-detial-materials/camstories-v2/camstories2-hero.jpg" alt="A traveller takes a time-travel portrait of her partner through the CamStories AR camera, the temporal slider set between 1998 and 2126" class="w-full aspect-[21/9] object-cover rounded-xl shadow-sm border border-gray-200 dark:border-gray-700" onerror="this.src='https://via.placeholder.com/1200x500?text=Hero+Image'">
+        </figure>
+
+        <header class="mb-12 border-b border-gray-100 dark:border-gray-800 pb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">CamStories V2: Paired AR at a Heritage Site</h1>
+
+            <p class="text-lg text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">A 24-dyad field study of collaborative AR at a heritage site — and what it says about designing for two people instead of one.</p>
+
+            <div class="flex flex-wrap gap-y-4 gap-x-8 text-sm">
+                <div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Role / Type</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Postdoctoral Researcher — Design &amp; Study Lead / Funded Research</div>
+                </div>
+                <div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Platform</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Mobile AR — iPadOS, Unity + ARKit</div>
+                </div>
+                <div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Timeline</div>
+                    <div class="font-medium text-gray-900 dark:text-white">2026</div>
+                </div>
+                <div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Method</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Between-subjects field study, 24 dyads (N=48)</div>
+                </div>
+                <div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Programme</div>
+                    <div class="font-medium text-gray-900 dark:text-white">NZD $8.2M, MBIE-funded, 5-year multi-university</div>
+                </div>
+                <div>
+                    <div class="text-gray-500 dark:text-gray-400 mb-1">Location</div>
+                    <div class="font-medium text-gray-900 dark:text-white">Engineering Core, University of Canterbury, Ōtautahi Christchurch</div>
+                </div>
+            </div>
+        </header>
+
+        <article class="prose prose-lg prose-gray max-w-none text-gray-700">
+
+            <p class="text-xl leading-relaxed text-gray-600 dark:text-gray-300 mb-8">
+                My <a href="project-tourism.html" class="text-blue-600 dark:text-blue-400 hover:underline">first version of CamStories</a> ended with an unwelcome finding: the photography was so engaging that people stopped listening to the story it was built to tell. This project is what I did about it — a redesigned system, a properly powered field study with 24 pairs of visitors, and an answer I was not expecting. The redesign fixed the problem I set out to fix. But the study also showed that the AR layer itself, the part I had assumed was doing the work, was not earning its keep.
+            </p>
+
+            <figure class="my-10">
+                <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
+                    <iframe class="absolute inset-0 w-full h-full"
+                            src="https://www.youtube-nocookie.com/embed/2tp_ET68XnY"
+                            title="Paired AR Travel Photography at a Heritage Site | CamStories V2"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    A walkthrough of the field study: the heritage site and the structure of the tour, the two conditions side by side, pairs photographing each other inside the AR reconstruction, and what the results showed.
+                </figcaption>
+            </figure>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">What V1 Told Me to Change</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The first prototype fused narration and photography into a single continuous activity, on the theory that a story woven into what people were already doing would be absorbed rather than endured. In practice the two competed for the same attention, and photography won. Participants remembered the volcano; they did not remember what the voice-over said about it.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Cognitive load theory explains why: narrative comprehension and creative interaction draw on the same limited working memory, so asking for both simultaneously means getting less of each. Multimedia learning research points at the remedy — segment the experience into short, self-paced steps. So for V2 I stopped trying to make the two activities happen at once. <strong class="font-semibold text-gray-900 dark:text-white">Rhythmic Operational Decoupling (ROD)</strong> gives each its own turn: at every waypoint, narration plays first with the interface deliberately quiet, and only when it finishes does the app open a dedicated photo session with no voice-over running.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                V2 changed almost everything else too. V1 was a single phone with asymmetric roles — one person saw the AR, the other was directed into it. V2 gives both partners their own iPad showing the same content, which removes the information gap that had forced them to talk. That was a deliberate trade: I wanted to know whether AR could sustain social connection on its own, without asymmetry doing the work for it. Time travel moved from an implicit panning gesture to an explicit on-screen slider — <em>1998, Today, 2126</em> — because V1 participants had found the gesture arbitrary and unsignposted.
+            </p>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/camstories-v2/camstories2-interface.jpg" alt="The CamStories camera interface across conditions: plain camera in the control condition, temporal slider in the experimental condition, the AR overlay after sliding to 1998, and a pair photographing with the overlay active" class="w-full rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    The camera across conditions. (a) Control condition — a plain live feed, with the dashed box marking where the slider would be. (b) Experimental condition — the temporal slider in that same region, resting on "Today". (c) After dragging to 1998, the live feed is replaced by a spatially anchored reconstruction of the site as it stood. (d) A pair photographing with the overlay active.
+                </figcaption>
+            </figure>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">The Site and the System</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The site is the Engineering Core at the University of Canterbury, a precinct with three time layers to work with: the present-day building, the footprint of a circular lecture theatre known to generations of students as the Mushroom — demolished after the 2010–2011 Christchurch earthquakes — and a speculative "living building" future. The past and future overlays were generated with World Labs' Marble, an AI 3D scene-synthesis tool, from archival photographs and concept imagery, then spatially anchored to the standing buildings.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Each pair carried two 11-inch iPad Pros running an identical build, audio through wired earphones, over a fixed three-waypoint route. AR was activated by scanning the campus map on an information board at the precinct entrance — a decision forced on me mid-project when the Niantic VPS platform I had planned around became unusable after a database migration. That compromise turned out to matter, and I return to it below.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">The Study</h2>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/camstories-v2/camstories2-structure.png" alt="Site layout showing three waypoints, and the session structure alternating a shared audio block with a condition-differentiated photo session at each waypoint" class="w-full rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    Left: the route through three waypoints — precinct entrance, central square, library forecourt. Right: the alternating structure at each waypoint. Block 1, the guided audio, is identical for both groups; Block 2, the photo session, is where the conditions diverge — a plain camera for the control group, the same camera plus the temporal slider for the AR group.
+                </figcaption>
+            </figure>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                I ran a one-factor between-subjects field study with 24 pairs (N=48), randomised at the pair level, 12 pairs per condition. The experimental condition used the full AR build. The control condition was identical in every respect — same audio narrative, same supporting images, same photo prompts, same iPads, same three photo sessions — except that the temporal slider and all overlays were removed, leaving a plain camera. The AR layer was the only variable.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                That control is the point. It is easy to show that an AR experience is enjoyable; it is much harder to show that the AR is what made it enjoyable. Measures spanned perceived closeness before and after, social presence across four subscales, a six-item recall quiz separating spatially anchored content from audio-only facts, user experience across pragmatic and hedonic quality, and need-based technology acceptance. Analysis was at the pair level; a power analysis set the minimum at 23 pairs and I recruited 24. Two-thirds of participants had little or no prior AR experience, which is closer to a real visiting public than a technology-enthusiast sample.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-10">
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">24 pairs</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">N=48, between-subjects, randomised</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">2 conditions</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">AR vs. an identical non-AR tour</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">d = 0.90</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Usability cost of the AR layer</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+                    <div class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">0 of 5</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Experiential measures showing an AR gain</div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">What the Data Said</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">ROD worked.</strong> Recall was equivalent across conditions, and the AR group showed no deficit on audio-only facts — the overload V1 suffered from did not reappear. Spatially anchored content was remembered better than abstract facts overall, but that held equally in both groups.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">AR carried a real usability cost.</strong> Pragmatic quality was significantly lower with AR than without it (2.16 vs 1.62 on a −3 to +3 scale, p = .039, d = 0.90 — a large effect). The interviews located it precisely: the slider appeared before the narration had explained it, the wide tablet made one-handed sliding awkward, and fast movement produced rendering artefacts that broke the illusion. Two of those three are fixable.
+            </p>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/camstories-v2/camstories2-ueq.png" alt="Bar chart of user experience scores showing significantly lower pragmatic quality for the AR condition and no difference in hedonic quality" class="w-full max-w-2xl mx-auto rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    The headline result. The AR camera was rated significantly less usable than the plain one, while the novelty and stimulation it was supposed to buy did not materialise — hedonic quality was statistically indistinguishable between the two.
+                </figcaption>
+            </figure>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">And nothing measurable offset that cost.</strong> Hedonic quality did not differ. Need fulfilment did not differ, and numerically favoured the non-AR group. Usage intention was effectively identical. Felt closeness rose slightly more with AR and perceived coordination rose slightly more without it, but neither trend reached significance.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                <strong class="font-semibold text-gray-900 dark:text-white">The one thing both groups agreed on was the photography.</strong> Across all 24 pairs, the photo session — not the AR, not the narration — was named as the moment they felt most like a pair. Partners described the listening blocks as "everyone doing their own thing" and the photo blocks as "when we were truly together." That was true whether or not there was an AR overlay in the frame.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">Two Mechanisms</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The qualitative record explains the split, and I offer these as interpretations rather than proven effects.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The <strong class="font-semibold text-gray-900 dark:text-white">Screen Barrier</strong>: when each partner attends to their own AR viewport, moment-to-moment coordination degrades. This is the likely source of the non-AR group's edge on behavioural interdependence — and, revealingly, of the workarounds the non-AR pairs invented, counting "3-2-1 play" to sync their audio, which is exactly the kind of interdependent behaviour the instrument measures.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The <strong class="font-semibold text-gray-900 dark:text-white">Shared Spectacle</strong>: a striking thing witnessed together is remembered afterwards as closeness, even when each person saw it on a separate screen. Pairs called each other over to look, reacted jointly, and later described those moments as the high points of the tour. Notably, the immersion itself was reported in the first person singular — "I felt like I was there," not "we" — while the closeness was reported in the plural.
+            </p>
+
+            <figure class="my-8">
+                <img src="assets/Project-detial-materials/camstories-v2/camstories2-panels.jpg" alt="Five panels showing the CamStories experience: touring with iPads, audio narration with imagery, discussing where to look, photographing at the information board, and taking a time-travel portrait" class="w-full rounded-xl shadow-md">
+                <figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed">
+                    The experience end to end: touring with an iPad each, narration delivered with archival imagery, working out together where to look, the information board that doubled as the AR trigger, and the time-travel portrait the whole design builds toward.
+                </figcaption>
+            </figure>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                One field finding sharpens all of this. Two of the twelve AR pairs never activated the overlay at all: they read the information board as ordinary signage and walked past the trigger. They carried the full complexity of the AR interface for an entire tour without ever seeing its content — cost with no payoff, and it shows in their scores. I report this as a finding rather than a footnote, because it is the clearest possible evidence that an activation step is a first-class interaction moment, not a line in a briefing.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-12 mb-4">What I Take From It</h2>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The honest headline is that AR did not enhance this experience; it <em>redistributed</em> it. It moved the visit toward something more phenomenological — a felt sense of standing in 1998 — and charged a measurable usability cost for it. Whether that trade is worth making is a design decision, not a technical one, and it depends entirely on what the experience is for. If the goal is temporal immersion, commit to AR and budget for the friction. If the goal is factual recall, a well-written audio tour with good archival imagery already does the job. If the goal is getting two people to coordinate, add shared controls rather than expecting the AR to generate interaction on its own.
+            </p>
+
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                The finding I keep returning to is the simplest one. What brought these pairs together was not the technology they were both looking at — it was having something to do together. For collaborative AR, that suggests designing the AR as a shared task rather than as content each person consumes in parallel. Sharing a moment brings people together; synchronised screens do not.
+            </p>
+
+        </article>
+
+    </main>
+    <script src="assets/lightbox.js"></script>
+</body>
+</html>
